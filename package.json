@@ -1,0 +1,46 @@
+{
+  "name": "svelte-app",
+  "version": "1.0.0",
+  "scripts": {
+    "parcel:start": "rm -rf ./dist && NODE_ENV=development parcel src/index.parcel.html --port 5000",
+    "parcel:build": "rm -rf ./dist && parcel build src/index.parcel.html -o dist/index.html --no-source-maps",
+    "rollup:start": "rm -rf ./dist && NODE_ENV=development rollup --config --watch",
+    "rollup:build": "rm -rf ./dist && NODE_ENV=production rollup --config",
+    "webpack:build": "rm -rf ./dist && cross-env NODE_ENV=production webpack",
+    "webpack:start": "rm -rf ./dist && webpack-dev-server --content-base dist --port 5000",
+    "serve": "sirv dist"
+  },
+  "browserslist": [
+    "last 1 chrome versions"
+  ],
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.1.2",
+    "@rollup/plugin-commonjs": "^11.0.0",
+    "@rollup/plugin-node-resolve": "^7.0.0",
+    "autoprefixer": "^9.7.6",
+    "cross-env": "^7.0.2",
+    "css-loader": "^3.5.2",
+    "html-webpack-plugin": "^4.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-svelte": "^4.0.6",
+    "rollup": "^2.6.1",
+    "rollup-plugin-html2": "^1.1.0",
+    "rollup-plugin-livereload": "^1.0.0",
+    "rollup-plugin-postcss": "^2.6.4",
+    "rollup-plugin-serve": "^1.0.1",
+    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-terser": "^5.1.2",
+    "serve": "^11.0.0",
+    "style-loader": "^1.1.4",
+    "svelte": "^3.0.0",
+    "svelte-loader": "^2.13.6",
+    "svelte-preprocess": "^3.7.1",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.3.1"
+  },
+  "dependencies": {
+    "sirv-cli": "^0.4.5"
+  }
+}
