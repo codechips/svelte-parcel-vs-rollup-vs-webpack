@@ -33,7 +33,7 @@
     "rollup-plugin-terser": "^5.1.2",
     "serve": "^11.0.0",
     "style-loader": "^1.1.4",
-    "svelte": "^3.0.0",
+    "svelte": "^3.49.0",
     "svelte-loader": "^2.13.6",
     "svelte-preprocess": "^3.7.1",
     "webpack": "^4.30.0",
